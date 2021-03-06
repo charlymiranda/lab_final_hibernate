@@ -59,7 +59,7 @@ public class ContactoDAO extends GenericDAO {
         }
     }
     
-    public Object buscarPorId(Contacto contacto){
+    public Contacto buscarPorId(Contacto contacto){
         em = getEntityManager();
         return em.find(Contacto.class, contacto.getIdContacto());
     }

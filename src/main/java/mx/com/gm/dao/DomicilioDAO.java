@@ -58,7 +58,7 @@ public class DomicilioDAO extends GenericDAO {
         }
     }
     
-    public Object buscarPorId(Domicilio domicilio){
+    public Domicilio buscarPorId(Domicilio domicilio){
         em = getEntityManager();
         return em.find(Domicilio.class, domicilio.getIdDomicilio());
     }
